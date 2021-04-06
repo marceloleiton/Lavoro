@@ -27,9 +27,9 @@ _Forma para instalar_
 _Iniciación del proyecto_
 
 ```
-[Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
+Ver los pasos según su sistema operativo, en este caso la aplicación está basada en android.
 ```
-
+* [Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
 
 ## Despliegue - Deployment 📦
 _Las instrucciones son las siguientes:_
