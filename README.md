@@ -2,7 +2,7 @@
 
 _Proyecto realizado en la Universidad de Valparaíso en la asignatura de Gestión de proyectos en la carrera de ingeniería Civil Informática, conformado por Marcelo Leiton, Silvio Vera y Manuel Barrera._
 
-_En la branch master se encuentra el codigo del proyecto._
+_En la branch master se encuentra el código del proyecto._
 
 ## Comenzando 🚀
 
