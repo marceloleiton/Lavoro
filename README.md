@@ -13,12 +13,11 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-node
-watchman
-android studio
-algun package manager ( YARN o NPM )
+Node
+Watchman
+android studio, si se trabaja con simulador virtual
 Editor de texto
-Java Development Kit
+Java jdk8
 ```
 
 ### Instalación 🔧
@@ -28,20 +27,23 @@ _Forma para instalar_
 _Iniciación del proyecto_
 
 ```
-https://reactnative.dev/docs/environment-setup
+[Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
 ```
 
 
-## Despliegue 📦
-_Como en este caso se utiliza yarn, las instrucciones son las siguientes:_
-_Para iniciar el servidor: yarn start_
-_Para desplegar dispositivo: yarn android_
+## Despliegue - Deployment 📦
+_Las instrucciones son las siguientes:_
+[Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
 
 ## Construido con 🛠️
 
 _Herramientas/tecnologías utilizadas_
 
 * [React-Native](https://reactnative.dev/)
+* [Node](https://nodejs.org/es/)
+* [Android studio](https://developer.android.com/studio)
+* [jdk8](https://adoptopenjdk.net/installation.html?variant=openjdk8&jvmVariant=hotspot)
+
 
 ## Autores ✒️
 
