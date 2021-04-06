@@ -2,6 +2,8 @@
 
 _Proyecto realizado en la Universidad de Valparaíso en la asignatura de Gestión de proyectos en la carrera de ingeniería Civil Informática, conformado por Marcelo Leiton, Silvio Vera y Manuel Barrera._
 
+_En la branch master se encuentra el codigo del proyecto._
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
