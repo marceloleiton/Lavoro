@@ -12,31 +12,24 @@ import Fontisto from "react-native-vector-icons/Fontisto";
 
 const HomeScreen=(props)=>{
     return (
-    <View>
-        <Pressable 
-            style={styles.searchButton} 
-            onPress={() => console.warn( {data: 'clicked botton'})}
-        >
-            <Fontisto name="search" size={25} color={"#f15454"} />    
-            <Text style={styles.searchButtonText}>Buscar Empleos</Text>
-        </Pressable>
+        <View>
 
+            <ImageBackground source={require('../../../assets/images/background.jpg')} style={styles.image}>
+            <Pressable style={styles.searchButton} onPress={() => console.warn( {data: 'clicked botton'})}>
+                <Fontisto name="search" size={25} color={"#f15454"} />    
+                <Text style={styles.searchButtonText}>Buscar Empleos</Text>
 
-        <ImageBackground 
-        source={require('../../../assets/images/background.jpg')} 
-        style={styles.image}
-        >
-
-            <Text style={styles.title}>Lavoro</Text>
-
-            <Pressable 
-            style={styles.button} 
-            onPress={() => console.warn( {data: 'clicked botton'})}
-            >
-            <Text style={styles.buttonText}>Busca oportunidades</Text>
             </Pressable>
 
-        </ImageBackground>
+                
+
+                <Text style={styles.title}>Lavoro</Text>
+
+            <Pressable style={styles.button} onPress={() => console.warn( {data: 'clicked botton'})}>
+                <Text style={styles.buttonText}>Busca oportunidades</Text>
+            </Pressable>
+
+            </ImageBackground>
     </View>
     );
 };
