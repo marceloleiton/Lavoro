@@ -19,19 +19,23 @@ Windows ->
 *  React-Native CLI QuickStart
 *  Development OS: Windows
 *  Target OS: Android
+```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
-
+```
 MacOS -> 
 *  React-Native CLI QuickStart
 *  Development OS: MacOS
 *  Target OS: Android
+```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
-
+```
 Linux -> 
 *  React-Native CLI QuickStart
 *  Development OS: Linux
 *  Target OS: Android
+```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
+```
 ```
 ```
 Node/Yarn
@@ -42,13 +46,13 @@ AVD Manager (Simulador) -> Pixel API 29 X86
 ```
 ```
 Plugins de Visual Studio Recomendables:
-
+```
 * [React Native Snippet](https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet)
 * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 * [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-```
+
 
 ### Instalación 🔧
 
