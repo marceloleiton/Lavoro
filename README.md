@@ -44,7 +44,7 @@ _Herramientas/tecnologías utilizadas_
 * [Android studio](https://developer.android.com/studio)
 * [jdk8](https://adoptopenjdk.net/installation.html?variant=openjdk8&jvmVariant=hotspot)
 * AVD Manager (Simulador) -> Pixel API 29 X86
-* 
+
 _Plugins recomendados para Visual Studio_
 * [React Native Snippet](https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet)
 * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
