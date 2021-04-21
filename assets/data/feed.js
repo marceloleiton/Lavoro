@@ -15,4 +15,12 @@ export default[
         "price": "18.000",
         totalPrice:"360.000",
     },
+    {
+        "id": "2",
+        "image": "https://img2.rtve.es/i/?w=1600&i=1504274624831.jpg",
+        "description": "Empresa de transporte está en busqueda de conductor con licencia A4 o A2 para distribución.",
+        "subtitle": "Chofer",
+        "price": "30.000",
+        totalPrice:"600.000",
+    },
 ];
