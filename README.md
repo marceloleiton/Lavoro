@@ -8,28 +8,26 @@ _En la branch master se encuentra el código del proyecto._
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-Windows -> 
+Windows:
 *  React-Native CLI QuickStart
 *  Development OS: Windows
 *  Target OS: Android
 ```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 ```
-MacOS -> 
+MacOS:
 *  React-Native CLI QuickStart
 *  Development OS: MacOS
 *  Target OS: Android
 ```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 ```
-Linux -> 
+Linux:
 *  React-Native CLI QuickStart
 *  Development OS: Linux
 *  Target OS: Android
@@ -37,47 +35,23 @@ Linux ->
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 ```
 ```
-```
-Node/Yarn
-Editor de Texto (Visual Studio)
-Android Studio
-AVD Manager (Simulador) -> Pixel API 29 X86
-
-```
-```
-Plugins de Visual Studio Recomendables:
-```
-* [React Native Snippet](https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet)
-* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-* [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-
-
-### Instalación 🔧
-
-_Forma para instalar_
-
-_Iniciación del proyecto_
-
-```
-Ver los pasos según su sistema operativo, en este caso la aplicación está basada en android.
-```
-* [Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
-
-## Despliegue - Deployment 📦
-_Las instrucciones son las siguientes:_
-[Documentacion en React Native](https://reactnative.dev/docs/environment-setup)
-
 ## Construido con 🛠️
 
 _Herramientas/tecnologías utilizadas_
 
 * [React-Native](https://reactnative.dev/)
 * [Node](https://nodejs.org/es/)
+* [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 * [Android studio](https://developer.android.com/studio)
 * [jdk8](https://adoptopenjdk.net/installation.html?variant=openjdk8&jvmVariant=hotspot)
-
+* AVD Manager (Simulador) -> Pixel API 29 X86
+* 
+_Plugins recomendados para Visual Studio_
+* [React Native Snippet](https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+* [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
 ## Autores ✒️
 
