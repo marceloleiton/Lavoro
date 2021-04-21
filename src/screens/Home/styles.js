@@ -38,16 +38,17 @@ const styles = StyleSheet.create({
 
     searchButton:{
         backgroundColor:'#fff',
-        height: 50,
+        height: 55,
         width:Dimensions.get('screen').width - 20,
-        borderRadius: 10,
+        borderRadius: 30,
         marginHorizontal:10,
+        marginLeft:10,
         //posible eror aqui
         flexDirection:'row',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        top:50,
+        top:25,
         zIndex:100,
         //fin
       
