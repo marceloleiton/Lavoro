@@ -56,6 +56,6 @@ _Plugins recomendados para Visual Studio_
 
 _Roles de la primera etapa del proyecto_
 
-* **Manuel Barera** - *Jefe de Poyecto* 
-* **Marcelo Leiton** - *Desarrollador* - [LINKEDIN](https://www.linkedin.com/in/marcelo-leiton-vald%C3%A9s-83a86b1ba/)
-* **Silvio Vera** - *Tester* 
+* **Manuel Barera** - *Jefe de Poyecto* - [github](https://github.com/Mabv107)
+* **Marcelo Leiton** - *Desarrollador*  - [github](https://github.com/marceloleiton)
+* **Silvio Vera** - *Tester*            - [github](https://github.com/silviovera)
