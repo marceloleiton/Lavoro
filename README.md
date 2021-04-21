@@ -16,21 +16,21 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
 Windows -> 
--> React-Native CLI QuickStart
--> Development OS: Windows
--> Target OS: Android
+*  React-Native CLI QuickStart
+*  Development OS: Windows
+*  Target OS: Android
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 
 MacOS -> 
--> React-Native CLI QuickStart
--> Development OS: MacOS
--> Target OS: Android
+*  React-Native CLI QuickStart
+*  Development OS: MacOS
+*  Target OS: Android
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 
 Linux -> 
--> React-Native CLI QuickStart
--> Development OS: Linux
--> Target OS: Android
+*  React-Native CLI QuickStart
+*  Development OS: Linux
+*  Target OS: Android
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 ```
 ```
