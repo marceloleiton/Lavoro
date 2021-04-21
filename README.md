@@ -33,8 +33,7 @@ Linux:
 *  Target OS: Android
 ```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
-```
-```
+
 ## Construido con 🛠️
 
 _Herramientas/tecnologías utilizadas_
