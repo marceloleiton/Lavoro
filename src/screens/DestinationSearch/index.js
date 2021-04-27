@@ -9,7 +9,7 @@ const DestinationSearchScreen = props => {
     /* setInputText=function reveal value*/
   }
 
-  const [inputText, setInputText] = useState(''); 
+  const [inputText, setInputText] = useState('');
 
   return (
     <View style={styles.container}>

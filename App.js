@@ -23,6 +23,7 @@ const App: () => React$Node = () => {
         {/* <Post post={post2}/>*/}
        {/* <SearchResultsScreen />*/}
        <DestinationSearchScreen/>
+        {/* 2:14:30*/}
       </SafeAreaView>
     </>
   );
