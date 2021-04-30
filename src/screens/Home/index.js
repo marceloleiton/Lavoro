@@ -1,37 +1,33 @@
-import React from "react";
+import React from 'react';
+import {View, Text, ImageBackground, Pressable} from 'react-native';
+import styles from './styles';
+import Fontisto from 'react-native-vector-icons/Fontisto';
+import {useNavigation} from '@react-navigation/native';
 
-import {
-    View,
-    Text, 
-    ImageBackground,
-    Pressable,
-} from "react-native";
+const HomeScreen = props => {
+  const navigation = useNavigation();
 
-import styles from "./styles"
-import Fontisto from "react-native-vector-icons/Fontisto";
+  return (
+    <View>
+      <Pressable
+        style={styles.searchButton}
+        onPress={() => navigation.navigate('Destination Search')}>
+        <Fontisto name="search" size={25} color={'#f15454'} />
+        <Text style={styles.searchButtonText}>Buscar Empleos</Text>
+      </Pressable>
+      <ImageBackground
+        source={require('../../../assets/images/background.jpg')}
+        style={styles.image}>
+        <Text style={styles.title}>Lavoro</Text>
 
-const HomeScreen=(props)=>{
-    return (
-        <View>
-            <ImageBackground source={require('../../../assets/images/background.jpg')} style={styles.image}>
-
-            <Pressable style={styles.searchButton} onPress={() => console.warn( {data: 'clicked botton'})}>
-                <Fontisto name="search" size={25} color={"#f15454"} />    
-                <Text style={styles.searchButtonText}>Buscar Empleos</Text>
-
-            </Pressable>
-
-                
-
-                <Text style={styles.title}>Lavoro</Text>
-            
-            <Pressable style={styles.button} onPress={() => console.warn( {data: 'clicked botton'})}>
-                <Text style={styles.buttonText}>Busca oportunidades</Text>
-            </Pressable>
-
-            </ImageBackground>
+        <Pressable
+          style={styles.button}
+          onPress={() => console.warn({data: 'clicked botton'})}>
+          <Text style={styles.buttonText}>Busca oportunidades</Text>
+        </Pressable>
+      </ImageBackground>
     </View>
-    );
+  );
 };
 
 export default HomeScreen;
