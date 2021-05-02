@@ -8,7 +8,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import DestinationSearchScreen from '../screens/DestinationSearch';
-
+import FiltersScreen from '../screens/Filters';
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigation = props => {
@@ -23,12 +23,23 @@ const HomeTabNavigation = props => {
           ),
         }}
       />
+
       <Tab.Screen
         name={'buscar'}
         component={DestinationSearchScreen}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
             <Fontisto name="search" size={28} color={color} />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name={'Filtro categorías'}
+        component={FiltersScreen}
+        options={{
+          tabBarIcon: ({color}: {color: string}) => (
+            <EvilIcons name="user" size={28} color={color} />
           ),
         }}
       />
