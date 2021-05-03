@@ -20,6 +20,8 @@
     "react-native": "0.64.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-google-places-autocomplete": "^2.2.0",
+    "react-native-maps": "0.28.0",
+    "react-native-pager-view": "^5.1.7",
     "react-native-reanimated": "^2.1.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.1.1",
@@ -39,5 +41,18 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "android": {
+    "package": "com.Lavoro",
+    "versionCode": 1.0,
+    "permissions": [
+      "ACCESS_COARSE_LOCATION",
+      "CAMERA"
+    ],
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyBs06EkRd01BNnDFCfZ2BUZOFKgr9x3Fd4"
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import SearchResults from '../screens/SearchResults';
+import SearchResultsMaps from '../screens/SearchResultsMap';
 import ViewPager from '@react-native-community/viewpager';
 const Tab = createMaterialTopTabNavigator();
 const SearchResultTabNavigator = props => {
@@ -13,7 +14,7 @@ const SearchResultTabNavigator = props => {
         },
       }}>
       <Tab.Screen name={'listado'} component={SearchResults} />
-      <Tab.Screen name={'mapa'} component={SearchResults} />
+      <Tab.Screen name={'mapa'} component={SearchResultsMaps} />
     </Tab.Navigator>
   );
 };
