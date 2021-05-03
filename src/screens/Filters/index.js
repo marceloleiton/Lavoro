@@ -6,7 +6,7 @@ import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
 const FiltersScreen = props => {
   const [ContrucionFilter, setContrucionFilter] = useState('no');
-  const [PanaderiaFilter, setPanaderiaFilter] = useState(0);
+  const [PanaderiaFilter, setPanaderiaFilter] = useState('no');
   const navigation = useNavigation();
   return (
     <View style={{justifyContent: 'space-between', height: '100%'}}>
@@ -44,13 +44,13 @@ const FiltersScreen = props => {
               alignItems: 'center',
             }}>
             <Pressable
-              onPress={() => setPanaderiaFilter(0)}
+              onPress={() => setPanaderiaFilter('no')}
               style={styles.button}>
               <Text style={{fontSize: 17}}>no</Text>
             </Pressable>
             <Text style={{marginHorizontal: 20}}>{PanaderiaFilter}</Text>
             <Pressable
-              onPress={() => setPanaderiaFilter(1)}
+              onPress={() => setPanaderiaFilter('si')}
               style={styles.button}>
               <Text style={{fontSize: 17}}>si</Text>
             </Pressable>
