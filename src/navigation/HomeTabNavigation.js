@@ -9,6 +9,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import DestinationSearchScreen from '../screens/DestinationSearch';
 import FiltersScreen from '../screens/Filters';
+import ExploreNavigator from '../navigation/ExploreNavigation';
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigation = props => {
@@ -16,7 +17,7 @@ const HomeTabNavigation = props => {
     <Tab.Navigator tabBarOptions={{activeTintColor: '#1259F5'}}>
       <Tab.Screen
         name={'inicio'}
-        component={HomeScreen}
+        component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
             <Fontisto name="home" size={28} color={color} />
@@ -35,7 +36,7 @@ const HomeTabNavigation = props => {
       />
 
       <Tab.Screen
-        name={'Filtro categorías'}
+        name={'Filtrocategorias'}
         component={FiltersScreen}
         options={{
           tabBarIcon: ({color}: {color: string}) => (

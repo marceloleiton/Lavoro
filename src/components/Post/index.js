@@ -1,31 +1,30 @@
 import React from 'react';
-import {View, Text,Image} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import styles from './styles';
 
-const Post = (props) => { 
+const Post = (props) => {
+  const post = props.post;
+  /*console.log(props);*/
+  return (
+    <View style={styles.container}>
+      {/* Portada*/}
+      <Image style={styles.image} source={{uri: post.image}} />
 
-    const post = props.post;
-    /*console.log(props);*/
-    return (
-        <View style={styles.container}> 
+      {/* Subtitulo*/}
+      <Text style={styles.subtitle}>{post.subtitle}</Text>
 
-            {/* Portada*/}
-            <Image style={styles.image} source={{uri:post.image}}/>
+      {/* Descripción*/}
+      <Text style={styles.description} numberOfLines={2}>
+        {post.description}
+      </Text>
 
-            {/* Subtitulo*/}
-            <Text style={styles.subtitle}>{post.subtitle}</Text>
-        
-            {/* Descripción*/}
-            <Text style={styles.description} numberOfLines={2}
-            >{post.description}</Text>
+      {/* Payment*/}
+      <Text style={styles.prices}>
+        <Text style={styles.price}>${post.price}</Text> / Día
+      </Text>
 
-            {/* Payment*/}
-            <Text style={styles.prices}>
-                <Text style={styles.price}>${post.price}</Text> / Día
-            </Text>
-
-            <Text style={styles.totalPrice}>${post.totalPrice} / Mes</Text>
-        </View>
-    );
+      <Text style={styles.totalPrice}>${post.totalPrice} / Mes</Text>
+    </View>
+  );
 };
 export default Post;

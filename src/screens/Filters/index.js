@@ -1,11 +1,13 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
 import {View, Text, Pressable} from 'react-native';
 import styles from './styles';
+import {useNavigation} from '@react-navigation/native';
 const FiltersScreen = props => {
   const [ContrucionFilter, setContrucionFilter] = useState('no');
   const [PanaderiaFilter, setPanaderiaFilter] = useState(0);
-
+  const navigation = useNavigation();
   return (
     <View style={{justifyContent: 'space-between', height: '100%'}}>
       <View>
@@ -57,6 +59,13 @@ const FiltersScreen = props => {
       </View>
 
       <Pressable
+        onPress={() => navigation.navigate('Home',{
+            screen: 'inicio',
+            params: {
+              screen: 'SearchResults',
+            },
+          })
+        }
         style={{
           marginBottom: 20,
           backgroundColor: '#1259F5',
@@ -66,7 +75,9 @@ const FiltersScreen = props => {
           marginHorizontal: 20,
           borderRadius: 10,
         }}>
-        <Text style={{fontSize: 19, fontWeight: 'bold', color: 'white'}}>Buscar</Text>
+        <Text style={{fontSize: 19, fontWeight: 'bold', color: 'white'}}>
+          Buscar
+        </Text>
       </Pressable>
     </View>
   );
