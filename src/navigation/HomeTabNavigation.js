@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home';
-
+import SearchResultsMaps from '../screens/SearchResultsMap';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -27,7 +27,7 @@ const HomeTabNavigation = props => {
 
       <Tab.Screen
         name={'buscar'}
-        component={DestinationSearchScreen}
+        component={SearchResultsMaps}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
             <Fontisto name="search" size={28} color={color} />
@@ -36,11 +36,11 @@ const HomeTabNavigation = props => {
       />
 
       <Tab.Screen
-        name={'Filtrocategorias'}
+        name={'Perfil'}
         component={FiltersScreen}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
-            <EvilIcons name="user" size={28} color={color} />
+            <Feather name="user" size={35} color={color} />
           ),
         }}
       />
