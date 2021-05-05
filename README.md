@@ -40,8 +40,8 @@ Debe descargar la carpeta de node_modules y agregarla a la carpeta del proyecto 
 
 Al tener la carpeta del proyecto debe descargar la carpeta node_modules y agregarla al proyecto
 Luego seleccionando la carpeta del proyecto para iniciar debe ingresar los siguientes comandos
-yarn start
-yarn android
+*  yarn start
+*  yarn android
 
 ## Construido con 🛠️
 
