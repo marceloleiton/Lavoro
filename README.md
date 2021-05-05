@@ -28,7 +28,8 @@ MacOS:
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 Debe descargar la carpeta de node_modules y agregarla a la carpeta del proyecto para su correcto funcionamiento
-
+* [Documentacion](https://reactnative.dev/docs/environment-setup)
+Debe seguir los pasos de configuración si desea ejecutar los pasos en un simulador de android
 * [Node_Modules](https://drive.google.com/file/d/1oZc-F0ndxwVKihyhDVCIiT343Nxsf9RB/view?usp=sharing)
 
 Al tener la carpeta del proyecto debe descargar la carpeta node_modules y agregarla al proyecto
