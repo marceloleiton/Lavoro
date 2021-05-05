@@ -4,7 +4,6 @@ _Proyecto realizado en la Universidad de Valparaíso en la asignatura de Gestió
 
 _En la branch master se encuentra el código del proyecto._
 
-* [Node_Modules](https://drive.google.com/file/d/1oZc-F0ndxwVKihyhDVCIiT343Nxsf9RB/view?usp=sharing)
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
@@ -36,6 +35,8 @@ Linux:
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 Debe descargar la carpeta de node_modules y agregarla a la carpeta del proyecto para su correcto funcionamiento
+
+* [Node_Modules](https://drive.google.com/file/d/1oZc-F0ndxwVKihyhDVCIiT343Nxsf9RB/view?usp=sharing)
 
 Al tener la carpeta del proyecto debe descargar la carpeta node_modules y agregarla al proyecto
 Luego seleccionando la carpeta del proyecto para iniciar debe ingresar los siguientes comandos
