@@ -31,8 +31,8 @@ Debe descargar la carpeta de node_modules y agregarla a la carpeta del proyecto 
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
 Debe seguir los pasos de configuración si desea ejecutar los pasos en un simulador de android
 * [Node_Modules](https://drive.google.com/file/d/1oZc-F0ndxwVKihyhDVCIiT343Nxsf9RB/view?usp=sharing)
-
 Al tener la carpeta del proyecto debe descargar la carpeta node_modules y agregarla al proyecto
+
 Luego seleccionando la carpeta del proyecto para iniciar debe ingresar los siguientes comandos
 *  yarn start
 *  yarn android
