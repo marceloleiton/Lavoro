@@ -22,14 +22,7 @@ MacOS:
 *  Target OS: Android
 ```
 * [Documentacion](https://reactnative.dev/docs/environment-setup)
-```
-Linux:
-*  React-Native CLI QuickStart
-*  Development OS: Linux
-*  Target OS: Android
-```
-* [Documentacion](https://reactnative.dev/docs/environment-setup)
-* 
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
