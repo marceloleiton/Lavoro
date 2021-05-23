@@ -1,5 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import HomeScreen from '../screens/Home';
 import SearchResultsMaps from '../screens/SearchResultsMap';
 import Fontisto from 'react-native-vector-icons/Fontisto';
@@ -10,6 +11,13 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import DestinationSearchScreen from '../screens/DestinationSearch';
 import FiltersScreen from '../screens/Filters';
 import ExploreNavigator from '../navigation/ExploreNavigation';
+import LoginScreen from '../screens/UserList/LoginScreen'
+import CreateAccountScreen from '../screens/UserList/CreateAccountScreen'
+import OnboardingScreen from '../screens/UserList/OnboardingScreen'
+import AuthStack from './AuthStack'
+import { View } from 'react-native';
+import Onboarding from 'react-native-onboarding-swiper';
+
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigation = props => {
@@ -34,15 +42,53 @@ const HomeTabNavigation = props => {
           ),
         }}
       />
-
+      
       <Tab.Screen
-        name={'Perfil'}
-        component={FiltersScreen}
+        name = "Onboarding" 
+        component= {OnboardingScreen}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
             <Feather name="user" size={35} color={color} />
           ),
         }}
+      />
+      <Tab.Screen
+        name = "Login" 
+        component= {LoginScreen}
+        options={{
+          tabBarIcon: ({color}: {color: string}) => (
+            <Feather name="user" size={35} color={color} />
+          ),
+        }}
+      />
+        <Tab.Screen
+        name = "CreateAccount" 
+        component= {CreateAccountScreen}
+        options={({navigation}) => ({
+          title: 'Create',
+          headerStyle: {
+            backgroundColor: '#f9fafd',
+            shadowColor: '#f9fafd',
+            elevation: 0,
+            tabBarIcon: ({color}: {color: string}) => (
+            <Feather name="user" size={35} color={color} />
+          ),
+          },
+          headerLeft: () => (
+            <View style={{marginLeft: 10}}>
+              <FontAwesome.Button 
+                name="long-arrow-left"
+                size={25}
+                backgroundColor="#f9fafd"
+                color="#333"
+                onPress={() => navigation.navigate('Login')}
+              />
+            </View>
+          ),
+          tabBarIcon: ({color}: {color: string}) => (
+            <Feather name="user" size={35} color={color} />
+          ),
+        })}
       />
     </Tab.Navigator>
   );

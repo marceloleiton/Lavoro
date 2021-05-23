@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806217456976",
+    "project_id": "lavoro-4fb0a",
+    "storage_bucket": "lavoro-4fb0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806217456976:android:fe5205cc494bbe4cbfa055",
+        "android_client_info": {
+          "package_name": "com.Lavoro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806217456976-4q5c03q2c9v5u1sev51s50o9eotgqg3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_oWicGAkx_iWH80l0EP9GyPaP_qpJrPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806217456976-4q5c03q2c9v5u1sev51s50o9eotgqg3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
