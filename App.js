@@ -1,15 +1,8 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import Router from './src/navigation/Router';
+import Providers from './src/navigation'
 
-const App: () => React$Node = () => { 
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <Router />
-    </>
-  );
-};
+const App=()=>{
+    return <Providers/>;
+}
 
 export default App;

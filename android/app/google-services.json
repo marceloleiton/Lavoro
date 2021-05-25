@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "806217456976",
-    "project_id": "lavoro-4fb0a",
-    "storage_bucket": "lavoro-4fb0a.appspot.com"
+    "project_number": "246499260683",
+    "project_id": "lavoro-f4b9e",
+    "storage_bucket": "lavoro-f4b9e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:806217456976:android:fe5205cc494bbe4cbfa055",
+        "mobilesdk_app_id": "1:246499260683:android:62747e1257844091d38a0e",
         "android_client_info": {
-          "package_name": "com.Lavoro"
+          "package_name": "com.lavoro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "806217456976-4q5c03q2c9v5u1sev51s50o9eotgqg3h.apps.googleusercontent.com",
+          "client_id": "246499260683-runi0427s6hdjraran9pja9me12sfhqb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_oWicGAkx_iWH80l0EP9GyPaP_qpJrPo"
+          "current_key": "AIzaSyCDMk_q553B1pQTxEO7wbXxdJTKwYP7Iw8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "806217456976-4q5c03q2c9v5u1sev51s50o9eotgqg3h.apps.googleusercontent.com",
+              "client_id": "246499260683-runi0427s6hdjraran9pja9me12sfhqb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

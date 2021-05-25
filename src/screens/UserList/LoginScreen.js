@@ -3,6 +3,7 @@ import {View, Text, TouchableOpacity,Image, Button, StyleSheet, Touchable} from 
 import FormInput from '../../components/Buttons/FormInput';
 import FormButton from '../../components/Buttons/FormButton';
 import SocialButton from '../../components/Buttons/SocialButton';
+import Router from '../../navigation/Router';
 const LoginScreen=({navigation}) =>{
     const[email,setEmail]=useState();
     const[password,setPassword]=useState();
@@ -32,7 +33,8 @@ const LoginScreen=({navigation}) =>{
             />
             <FormButton
             buttonTitle="Ingresar"
-            onPress={()=>alert('Ingresar Clicked!')}
+           // onPress={()=>alert('Ingresar Clicked!')}
+           onPress={()=>navigation.navigate("Home")}
             />
             <TouchableOpacity style={styles.forgotButton} onPress={()=>{}}>
                 <Text style={styles.navButtonText}>Olvidaste tu contraseña?</Text>

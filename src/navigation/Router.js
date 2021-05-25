@@ -20,6 +20,7 @@ const Router = props => {
           name={'Destination Search'}
           component={DestinationSearchScreen}
           options={{title: 'Buscar empleos'}}
+          onPress={()=>navigation.navigate("Search")}
         />
 
         <Stack.Screen
