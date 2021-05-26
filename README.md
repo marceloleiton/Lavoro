@@ -62,3 +62,9 @@ _Roles de la primera etapa del proyecto_
 * **Manuel Barera** - *Jefe de Poyecto* - [github](https://github.com/Mabv107)
 * **Marcelo Leiton** - *Desarrollador*  - [github](https://github.com/marceloleiton)
 * **Silvio Vera** - *Tester*            - [github](https://github.com/silviovera)
+
+_Roles de la segunda etapa del proyecto_
+
+* **Manuel Barera** - *Tester*            - [github](https://github.com/Mabv107)
+* **Marcelo Leiton** - *Jefe de Poyecto*  - [github](https://github.com/marceloleiton)
+* **Silvio Vera** - *Desarrollador*       - [github](https://github.com/silviovera)
