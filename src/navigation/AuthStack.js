@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import CreateAccountScreen from '../screens/UserList/CreateAccountScreen';
 import LoginScreen from '../screens/UserList/LoginScreen';
 import OnboardingScreen from '../screens/UserList/OnboardingScreen';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Router from './Router';
 import HomeTabNavigation from './HomeTabNavigation';
 import ExploreNavigator from './ExploreNavigation';
@@ -49,22 +50,31 @@ const AuthStack = () =>{
             <Stack.Screen
                 name = "CreateAccount" 
                 component= {CreateAccountScreen}
-                options={{  header:()=>null      }}
+                options={({navigation})=>({
+                    title:'',
+                    headerStyle:{
+                    backgroundColor:'#f9fafd',
+                    shadowColor:'#f9fafd',
+                    elevation:0,
+                    },
+                    headerLeft:()=>(
+                        <View style={{marginLeft:10}}>
+                            <FontAwesome.Button
+                            name="long-arrow-left"
+                            size={25}
+                            backgroundColor="#f9fafd"
+                            color="#333"
+                            onPress={()=>navigation.navigate('Login')}
+                            />
+                        </View>
+                    ),
+                })}
             />       
-            <Stack.Screen
-            name={"Home"}
-            component={HomeScreen}
-            options={{headerShown: false}}
-            /> 
-            <Stack.Screen
-            name={"Search"}
-            component={DestinationSearchScreen}
-            options={{headerShown: false}}
-            />
+
         </Stack.Navigator>
         //agregar la ruta de router a authstack en la seccion de home o similar para no tener que apilar mas screen(todas) en usa sola seccion 
         //revisar alternativa al uso de " import AsyncStorage from '@react-native-community/async-storage'; " ya que con eso se realiza el almacenamiento temporal de una key en la aplicacion
     );
 };
 
-export default AuthStack
+export default AuthStack;

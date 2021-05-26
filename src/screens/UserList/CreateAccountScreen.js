@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {View, Text, TouchableOpacity,Image, Button, StyleSheet, Touchable} from 'react-native';
 import FormInput from '../../components/Buttons/FormInput';
 import FormButton from '../../components/Buttons/FormButton';
 import SocialButton from '../../components/Buttons/SocialButton';
+import { AuthContext } from '../../navigation/AuthProvider';
 
 const CreateAccountScreen=({navigation}) =>{
     const[email,setEmail]=useState();
     const[password,setPassword]=useState();
-    const[confirmpassword,setConfirmPassword]=useState();
+    const[confirmPassword,setConfirmPassword]=useState();
+
+    const{register} = useContext(AuthContext);
+
     return(
         <View style={styles.container}>
             <Text style={styles.text}>Crear Cuenta</Text>
@@ -29,15 +33,15 @@ const CreateAccountScreen=({navigation}) =>{
             secureTextEntry={true}
             />
             <FormInput
-            labelValue={confirmpassword}
-            onChangeText={(userPassword)=>setConfirmPassword(userPassword)}
+            labelValue={confirmPassword}
+            onChangeText={(userPassword)=>setPassword(userPassword)}
             placeholderText="Confirm Password"
             iconType="lock"
             secureTextEntry={true}
             />
             <FormButton
             buttonTitle="Crear Cuenta"
-            onPress={()=>alert('Crear Cuenta Clicked!')}
+            onPress={()=> register(email,password)}
             />
 
             <View style={styles.textPrivate}>
@@ -65,7 +69,7 @@ const CreateAccountScreen=({navigation}) =>{
             />
 
             <TouchableOpacity 
-            style={styles.forgotButton}
+            style={styles.navButton}
              onPress={()=>navigation.navigate('Login')}>
                 <Text style={styles.navButtonText}>ya tienes cuenta? Ingresa Aquí</Text>
             </TouchableOpacity>

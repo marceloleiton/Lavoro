@@ -1,15 +1,15 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import Router from './Router';
+import {createStackNavigator} from '@react-navigation/stack';
+import ProfileScreen from '../screens/UserList/ProfileScreen';
 
-const App: () => React$Node = () => { 
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <Router />
-    </>
+const Stack = createStackNavigator();
+
+const AppStack= ()=>{
+  return(
+    <Stack.Navigator>
+      <Stack.Screen name='Home' component={ProfileScreen}/>
+    </Stack.Navigator>
   );
-};
+}
 
-export default App;
+export default AppStack;
