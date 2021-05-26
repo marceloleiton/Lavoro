@@ -1,15 +1,13 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import ProfileScreen from '../screens/UserList/ProfileScreen';
+import Router from './Router';
+import 'react-native-gesture-handler';
 
-const Stack = createStackNavigator();
-
-const AppStack= ()=>{
-  return(
-    <Stack.Navigator>
-      <Stack.Screen name='Home' component={ProfileScreen}/>
-    </Stack.Navigator>
+const AppStack = () => {
+  return (
+    <>
+      <Router />
+    </>
   );
-}
+};
 
 export default AppStack;
