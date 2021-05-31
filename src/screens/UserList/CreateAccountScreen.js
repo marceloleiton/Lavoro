@@ -16,7 +16,7 @@ import {AuthContext} from '../../navigation/AuthProvider';
 const CreateAccountScreen = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const [confirmPassword, setConfirmPassword] = useState();
+
 
   const {register} = useContext(AuthContext);
 
@@ -40,13 +40,7 @@ const CreateAccountScreen = ({navigation}) => {
         iconType="lock"
         secureTextEntry={true}
       />
-      <FormInput
-        labelValue={confirmPassword}
-        onChangeText={userPassword => setPassword(userPassword)}
-        placeholderText="Confirmar contraseña"
-        iconType="lock"
-        secureTextEntry={true}
-      />
+
       <FormButton
         buttonTitle="Crear Cuenta"
         onPress={() => register(email, password)}
@@ -113,3 +107,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato-Regular',
   },
 });
+/*      para confirmar contraseña a futuro , falta el if que confirma que son iguales
+  const [confirmPassword, setConfirmPassword] = useState();
+
+
+<FormInput
+        labelValue={confirmPassword}
+        onChangeText={userConfirmPassword => setConfirmPassword(userConfirmPassword)}
+        placeholderText="Confirmar contraseña"
+        iconType="lock"
+        secureTextEntry={true}
+      />*/

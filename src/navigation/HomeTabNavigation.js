@@ -5,6 +5,7 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExploreNavigator from '../navigation/ExploreNavigation';
+import CrudNavigation from '../navigation/CrudNavigation';
 import ProfileScreen from '../screens/UserList/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
@@ -33,8 +34,8 @@ const HomeTabNavigation = props => {
       />
 
       <Tab.Screen
-        name="Perfil"
-        component={ProfileScreen}
+        name={'Perfil'}
+        component={CrudNavigation}
         options={{
           tabBarIcon: ({color}: {color: string}) => (
             <Feather name="user" size={35} color={color} />

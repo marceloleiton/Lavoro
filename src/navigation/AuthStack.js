@@ -23,11 +23,10 @@ const AuthStack = () => {
   }, []);
   if (isFirstLaunch === null) {
     return null;
-  } else if (isFirstLaunch == true) {
-    routeName = 'Onboarding';
   } else {
     routeName = 'Login';
-  }
+  };
+
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -58,6 +57,7 @@ const AuthStack = () => {
           ),
         })}
       />
+
     </Stack.Navigator>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, ImageBackground, Pressable} from 'react-native';
+import {View, Text, ImageBackground, Pressable,Alert} from 'react-native';
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import {useNavigation} from '@react-navigation/native';
@@ -22,7 +22,12 @@ const HomeScreen = props => {
 
         <Pressable
           style={styles.button}
-          onPress={() => console.warn({data: 'clicked botton'})}>
+          onPress={() => 
+            Alert.alert('Funcion aun no implementada','Porfavor vuelva pronto',[
+              {text: 'Aceptar', onPress:()=>console.log('alert closed')}
+          ])
+    
+            }>
           <Text style={styles.buttonText}>Busca oportunidades</Text>
         </Pressable>
       </ImageBackground>
