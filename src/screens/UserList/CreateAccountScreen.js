@@ -7,6 +7,7 @@ import {
   Button,
   StyleSheet,
   Touchable,
+  Alert,
 } from 'react-native';
 import FormInput from '../../components/Buttons/FormInput';
 import FormButton from '../../components/Buttons/FormButton';
@@ -63,7 +64,12 @@ const CreateAccountScreen = ({navigation}) => {
         btnType="facebook"
         color="#4867aa"
         backgroundColor="#e6eaf4"
-        onPress={() => {}}
+        onPress={() => 
+          Alert.alert('Funcion aun no implementada','Porfavor vuelva pronto',[
+            {text: 'Aceptar', onPress:()=>console.log('alert closed')}
+        ])
+  
+          }
       />
 
       <SocialButton
@@ -71,7 +77,12 @@ const CreateAccountScreen = ({navigation}) => {
         btnType="google"
         color="#de4d41"
         backgroundColor="#f5e7ea"
-        onPress={() => {}}
+        onPress={() => 
+          Alert.alert('Funcion aun no implementada','Porfavor vuelva pronto',[
+            {text: 'Aceptar', onPress:()=>console.log('alert closed')}
+        ])
+  
+          }
       />
 
       <TouchableOpacity

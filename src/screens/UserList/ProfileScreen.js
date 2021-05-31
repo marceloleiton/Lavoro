@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet,Image} from 'react-native';
 import FormButton from '../../components/Buttons/FormButton';
 import {AuthContext} from '../../navigation/AuthProvider';
 
@@ -7,7 +7,13 @@ const ProfileScreen = ({navigation}) =>  {
   const {user, logout} = useContext(AuthContext);
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Usuario: {user.uid}</Text>
+            <Image
+        source={require('../../../assets/images/Logo.jpg')}
+        style={styles.logo}
+      />
+      <Text style={styles.text}>Lavoro</Text>
+      <Text style={styles.text}>Registrar Empleo</Text>
+      <Text style={styles.text}>Usuario: {user.email}</Text>
       <FormButton buttonTitle="Crear" 
         onPress={() => navigation.navigate('Crear')}/>
       <FormButton buttonTitle="Modificar" 
@@ -26,7 +32,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20,
+    padding: 50,
+    
   },
   text: {
     fontSize: 20,

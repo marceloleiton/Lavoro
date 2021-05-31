@@ -13,12 +13,12 @@ import FormInput from '../../components/Buttons/FormInput';
 import FormButton from '../../components/Buttons/FormButton';
 import SocialButton from '../../components/Buttons/SocialButton';
 import {AuthContext} from '../../navigation/AuthProvider';
-
+import Feather from 'react-native-vector-icons/Feather';
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
   const {login} = useContext(AuthContext);
+
 
 
   return (
@@ -28,11 +28,12 @@ const LoginScreen = ({navigation}) => {
         style={styles.logo}
       />
       <Text style={styles.text}>Lavoro</Text>
-
+      <View>
       <FormInput
         labelValue={email}
-        onChangeText={userEmail => setEmail(userEmail)}
-        placeholderText="Correo"
+       onChangeText={userEmail => setEmail(userEmail)}
+      //onChangeText={(val)=>textInputChange(val)}
+       placeholderText="Correo"
         iconType="user"
         keyboardType="email-address"
         autoCapitalize="none"
@@ -44,7 +45,10 @@ const LoginScreen = ({navigation}) => {
         placeholderText="Contraseña"
         iconType="lock"
         secureTextEntry={true}
+        
       />
+      
+      </View>
       <FormButton
         buttonTitle="Ingresar"
         onPress={() => login(email, password)}
