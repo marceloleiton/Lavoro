@@ -52,7 +52,12 @@ const CreateAccountScreen = ({navigation}) => {
           {' '}
           Al registrarse, aceptas nuestros
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity         onPress={() => 
+          Alert.alert('Funcion aun no implementada','Porfavor vuelva pronto',[
+            {text: 'Aceptar', onPress:()=>console.log('alert closed')}
+        ])
+  
+          }>
           <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>
             terminos de servicio y Politicas de Privacidad
           </Text>

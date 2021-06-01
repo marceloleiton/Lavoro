@@ -53,8 +53,15 @@ const LoginScreen = ({navigation}) => {
         buttonTitle="Ingresar"
         onPress={() => login(email, password)}
       />
-      <TouchableOpacity style={styles.forgotButton} onPress={() => {}}>
+      <TouchableOpacity style={styles.forgotButton}         
+      onPress={() => 
+          Alert.alert('Funcion aun no implementada','Porfavor vuelva pronto',[
+            {text: 'Aceptar', onPress:()=>console.log('alert closed')}
+        ])
+  
+          }>
         <Text style={styles.navButtonText}>Olvidaste tu contraseña?</Text>
+
       </TouchableOpacity>
 
       <SocialButton
